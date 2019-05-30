@@ -3,4 +3,5 @@ raspcode:
   hosts:
     raspcode.local:
       ansible_host: 192.168.1.75
+      ansible_port: 56831
       ansible_user: pi
