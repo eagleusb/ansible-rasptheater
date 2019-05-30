@@ -1,0 +1,26 @@
+---
+users_create_per_user_group: true
+users_group: users
+users_default_shell: /bin/bash
+users_create_homedirs: true
+users_default_password: ""
+
+# Lists of users to create and delete
+# Example
+#   users:
+#     - name: Raspberry VSCode
+#       username: raspcode
+#       uid: 5000
+#       groups: [sudo]
+#       ssh_key:
+#         - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO9+w7sqfdnRYbnIIi/STEwUgfV8VtmVD2g5C9HY3VIs raspcode@eagleusb"
+#       update_password: on_create
+users: []
+users_deleted: []
+
+# List of groups to create
+# Example:
+#   groups_to_create:
+#     - name: developers
+#       gid: 10000
+groups_to_create: []
