@@ -1,0 +1,6 @@
+---
+
+- name: "configure raspcode for awesome development"
+  hosts: "raspcode"
+  roles:
+    - { role: "users", tags: "users" }

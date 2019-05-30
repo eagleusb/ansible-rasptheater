@@ -1,0 +1,17 @@
+---
+
+- name: "ensure that openssh-server is installed"
+  package:
+    name: "openssh-server"
+    state: present
+    install_recommends: no
+
+- name: "harden openssh-server configuration"
+  template:
+    src: "sshd_config.j2"
+    dest: "/etc/ssh/sshd_config"
+    mode: "0600"
+    owner: root
+    group: root
+    validate: "/usr/sbin/sshd -T -f %s"
+  notify: reload sshd

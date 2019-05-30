@@ -1,0 +1,9 @@
+---
+users:
+  - name: Raspberry VSCode
+    username: raspcode
+    uid: 5000
+    groups: [sudo]
+    ssh_key:
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO9+w7sqfdnRYbnIIi/STEwUgfV8VtmVD2g5C9HY3VIs raspcode@eagleusb"
+    update_password: on_create
