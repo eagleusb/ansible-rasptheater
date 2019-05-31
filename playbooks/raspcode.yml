@@ -5,3 +5,4 @@
   roles:
     - { role: "users", tags: "users" }
     - { role: "sshd", tags: "sshd" }
+    - { role: "vscode", tags: "vscode" }
